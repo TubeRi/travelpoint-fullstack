@@ -1,6 +1,6 @@
 # TravelPoint
 
-TravelPoint is a travel website built with **React, Vite and Tailwind CSS**. Users can explore destinations, create an account, manage their profile, book trips, write reviews and make **Stripe test payments**. No real money is charged or real travel reservation made.
+TravelPoint is a full-stack travel website built with **React, Vite and Tailwind CSS** . Users can explore destinations, create an account, manage their profile, book trips, write reviews and make **Stripe test payments**. No real money is charged or real travel reservation made.
 
 ## Tech Stack
 
@@ -14,6 +14,12 @@ TravelPoint is a travel website built with **React, Vite and Tailwind CSS**. Use
 | Zod | Request validation |
 | Stripe | Hosted test checkout and payment confirmation |
 | Netlify | Frontend hosting and backend functions |
+
+#What I learned
+
+I learned by building the project in stages. I started with reusable React components and responsive layouts, then connected the frontend to an Express API and PostgreSQL. Building accounts, bookings, and reviews taught me how to validate requests, manage sessions, and make sure users can only access their own private records.
+
+The Stripe integration taught me how to handle payment confirmation when it arrives separately from the browser redirect. The server reads the price from the database, verifies Stripe’s webhook signature, and updates the order. The success page checks the saved order status so it can show when the payment is confirmed.
 
 ## Project structure
 
